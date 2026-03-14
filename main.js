@@ -104,17 +104,17 @@ async function submitAnswer(answer, extra = {}) {
 
 async function main() {
   try {
-    // 1. start / resume session
+    // start / resume session
     await startSession();
 
     await wait(3100);
 
-    // 2. get current challenge
+    // get current challenge
     const status = await getStatus();
 
     await wait(3100);
 
-    // 3. get a clue
+    // get a clue
     const clue = await getClue();
 
     // submit an answer
