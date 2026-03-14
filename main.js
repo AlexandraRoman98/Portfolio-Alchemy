@@ -119,7 +119,7 @@ async function main() {
 
     // submit an answer
     await wait(3100);
-    const submitResult = await submitAnswer("my answer here");
+    const submitResult = await submitAnswer("4");
 
   } catch (error) {
     console.error("Error:", error.message);
