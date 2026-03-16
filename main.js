@@ -119,7 +119,7 @@ async function main() {
 
     // submit an answer
     await wait(3100);
-    const submitResult = await submitAnswer("pi");
+    const submitResult = await submitAnswer("Au, Hg, Ag, Fe, Au");
 
   } catch (error) {
     console.error("Error:", error.message);
