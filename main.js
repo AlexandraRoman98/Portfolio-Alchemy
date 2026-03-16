@@ -104,22 +104,20 @@ async function submitAnswer(answer, extra = {}) {
 
 async function main() {
   try {
-    // start / resume session
     await startSession();
 
     await wait(3100);
-
-    // get current challenge
-    const status = await getStatus();
+    await getStatus();
 
     await wait(3100);
+    await getClue();
 
-    // get a clue
-    const clue = await getClue();
-
-    // submit an answer
     await wait(3100);
-    const submitResult = await submitAnswer("Au, Hg, Ag, Fe, Au");
+    const submitResult = await submitAnswer("GMSIG");
+    console.log("Result:", submitResult);
+
+    await wait(3100);
+    await getStatus();
 
   } catch (error) {
     console.error("Error:", error.message);
