@@ -113,8 +113,8 @@ async function main() {
     await getClue();
 
     await wait(3100);
-    const submitResult = await submitAnswer("GMSIG");
-    console.log("Result:", submitResult);
+   const submitResult = await submitAnswer("Gold Quicksilver Silver Iron Gold");
+   console.log("Result:", submitResult);
 
     await wait(3100);
     await getStatus();
